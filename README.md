@@ -1,51 +1,64 @@
-# #  MapeiaTI
+#  EcoWallet
 
-> Levantamento e análise de dados de infraestrutura de sistemas em ambiente real.
+> Sistema de gestão financeira pessoal com interface gráfica desenvolvido em Java.
 
 ---
 
-##  Tecnologias e recursos
+##  Tecnologias
 
-![SVG](https://img.shields.io/badge/SVG-FFB13B?style=flat&logo=svg&logoColor=black)
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white)
-![Documentação](https://img.shields.io/badge/Relatório_Técnico-0A66C2?style=flat&logo=readme&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![JavaFX](https://img.shields.io/badge/JavaFX-007396?style=flat&logo=java&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat&logo=apache-maven&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
 
 ---
 
 ##  Sobre o projeto
 
-O MapeiaTI é um projeto de extensão acadêmica desenvolvido na disciplina de ACE (Atividade Curricular de Extensão) durante o 3º semestre do Bacharelado em Sistemas de Informação.
+O EcoWallet é uma aplicação desktop de controle financeiro pessoal desenvolvida como projeto final da disciplina de Programação Orientada a Objetos.
 
-O projeto consistiu no levantamento real de dados de infraestrutura de sistemas no **Supermercado Central** de Senador Pompeu, CE — resultando em documentação técnica formal e representação visual dos dados coletados.
-
----
-
-##  O que está neste repositório
-
--  Relatório técnico completo em PDF
--  Diagrama de infraestrutura em SVG
--  Documentação do levantamento de dados
+O sistema permite ao usuário registrar receitas e despesas, visualizar o saldo atualizado automaticamente e manter um histórico de transações — tudo com interface gráfica intuitiva.
 
 ---
 
-##  O que foi feito
+##  Funcionalidades
 
-- Levantamento presencial dos dados de infraestrutura do ambiente
-- Coleta e estruturação das informações técnicas
-- Elaboração de relatório técnico formal
-- Criação de diagrama SVG representando a infraestrutura mapeada
+- Registro de receitas e despesas
+- Saldo atualizado automaticamente via `ListChangeListener`
+- Listagem de transações em `TableView`
+- Persistência de dados em arquivo JSON
+- Interface construída com FXML
 
 ---
 
-##  Contexto acadêmico
+##  Arquitetura
 
-Projeto desenvolvido no curso de **Bacharelado em Sistemas de Informação**
-**UniCatólica — Centro Universitário Católico de Quixadá**
+- Padrão de projeto **Factory**
+- Princípios **SOLID** (SRP aplicado)
+- Herança com classe abstrata `Transacao` → `Receita` / `Despesa`
+- Persistência via biblioteca `json-simple`
+
+---
+
+##  Como executar
+
+**Pré-requisitos:** JDK 21 e Maven instalados.
+
+```bash
+# Clone o repositório
+git clone https://github.com/gabriel-alb/ecowallet.git
+
+# Acesse a pasta
+cd ecowallet
+
+# Execute com Maven
+mvn javafx:run
+```
 
 ---
 
 ##  Autor
 
-**Gabriel Albuquerque Silva**
+**Gabriel Albuquerque**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-alb)
