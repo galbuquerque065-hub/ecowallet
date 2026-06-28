@@ -59,6 +59,6 @@ mvn javafx:run
 
 ##  Autor
 
-**Gabriel Albuquerque**
+**Gabriel Albuquerque** 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-alb)
